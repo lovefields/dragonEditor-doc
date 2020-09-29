@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="layout clearfix">
+        <a href="{{ site.baseurl }}/" class="title">DragonEditor Document</a>
+    
+        <div class="status">
+            <button class="btn-var js-open-target" data-target=".pop-var">{{ page.const }}</button>
+            <button class="btn-lang js-open-target" data-target=".pop-lang">{{ page.lang }}</button>
+            <div class="pop pop-var">
+                {% for var in site.versionList %}
+                    <a href="{{ site.baseurl }}/{{ var }}/{{ page.lang }}/introduction" class="link">{{ var }}</a>
+                {% endfor %}
+            </div>
+            <div class="pop pop-lang">
+                {% for lang in site.langList %}
+                    <button class="btn js-change-lang">{{ lang }}</button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</header>

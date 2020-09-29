@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  "General - Dragone Editor Document"
+text:  "General"
 lang : "en"
 const : "1.0.1"
 ---

@@ -13,7 +13,9 @@
 </head>
 <body>
 <div class="wrap">
-    <main class="layout clearfx">
+    {% include header.html %}
+
+    <main class="container layout clearfix">
         <section class="section">{{ content }}</section>
         <aside class="aside">{% include menu.html %}</aside>
     </main>
