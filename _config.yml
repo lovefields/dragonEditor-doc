@@ -21,7 +21,7 @@
 title: Dragone Editor Document
 email: lovefield@dico.me
 description: Dragone Editor Document site
-baseurl: ""
+baseurl: "/dragonEditor-doc"
 url: ""
 versionList : ["1.0.1"]
 langList : ["ko", "en"]
