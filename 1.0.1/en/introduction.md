@@ -1,30 +1,73 @@
 ---
 layout: default
-title:  "General - Dragone Editor Document"
-text:  "General"
+title:  "Intro - Dragone Editor Document"
+text:  "Intro"
 lang : "en"
 const : "1.0.1"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+# [Intro](#intro)
 
-`YEAR-MONTH-DAY-title.MARKUP`
+dragonEditor is WYSIWYG editor that I made it because I needed it<br>
+I neede an editor for my team blog [Dico](https://dico.me), So i made it.<br>
+I want this editor can accommodate a variety of designs. And can custom. So i add it.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## [Using](#using)
 
-Jekyll also offers powerful support for code snippets:
+dragonEditor is available as follows.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### [Editor page](#editor-page)
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+First, load resource.
+
+```html
+<!-- 
+* Load Google font(Inconsolata) if you using code block.
+* Load DragonEditor CSS
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="[yourdir]/dragonEditor.css">
+
+<!-- 
+* You must set svg icon pack. Default pack is in assets.
+-->
+<svg class="icon-pack">
+    <defs>
+        <g id="icon-id">...</g>
+        ...
+    </defs>
+</svg>
+<div class="editor-dragon"></div>
+
+<!-- 
+* Load highlight plugin if you using code block.
+* Load dragonEditor js
+-->
+<script src="[yourdir]/highlight.pack.js"></script>
+<script src="[yourdir]/dragonEditor.js"></script>
+```
+
+And next step is using Javascript.
+
+```js
+const editor = new dragonEditor();
+// OR
+const editor = new dragonEditor("selector", {
+    key: "value",
+});
+```
+
+### [View page](#view-page)
+
+View page is just load css file.<br>
+This css file is useing `editor-item`, `editor-clearfix` class.
+
+```html
+<!-- 
+* Load Google font(Inconsolata) if you using code block.
+* Load DragonEditorViewer CSS
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="[yourdir]/dragonEditorViewer.css">
+```

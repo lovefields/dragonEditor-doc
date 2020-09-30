@@ -58,12 +58,12 @@ editor.setMedia([
 ## [getContentData](#getContentData)
 
 에디터의 현재 데이터를 반환합니다.<br>
-데이터 형태는 [dataSample.json]()을 참조 바랍니다.
+데이터 형태는 [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/work-area/dataSample.json)을 참조 바랍니다.
 
 ## [setContentData](#setContentData)
 
 에디터의 데이터를부여합니다.<br>
-데이터 형태는 [dataSample.json]()을 참조 바랍니다.
+데이터 형태는 [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/work-area/dataSample.json)을 참조 바랍니다.
 
 ## [addItem](#addItem)
 
