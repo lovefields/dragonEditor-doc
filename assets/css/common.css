@@ -23,14 +23,51 @@ img{border:0;vertical-align:top}
 
 .container{padding-top:50px}
 
-.section{float:left;width:calc(100% - 300px);font-size:16px;line-height:1.6}
-.section h1{margin-bottom:10px;font-size:28px;font-weight:bold}
+.section{float:left;width:calc(100% - 300px);padding-bottom:100px;font-size:16px;line-height:1.6}
+.section > *:nth-child(1){margin-top:0}
+.section h1{margin:30px 0 10px;font-size:28px;font-weight:bold}
 .section h1 a{color:#333}
-.section h2{margin-bottom:10px;font-size:24px;font-weight:bold}
+.section h2{margin:30px 0 10px;font-size:24px;font-weight:bold}
 .section h2 a{color:#333}
-.section h3{margin-bottom:10px;font-size:20px;font-weight:bold}
+.section h3{margin:30px 0 10px;font-size:20px;font-weight:bold}
 .section h3 a{color:#333}
 .section a{color:#18a0fb;font-weight:bold}
+.section blockquote{padding:5px;margin:10px 0;background:#f1f1f1;border-left:4px solid #ddd;border-radius:2px}
+
+/* code color */
+.section pre.highlight{margin:10px 0;padding:10px;background:#232323;border-radius:2px}
+.section .highlight,pre,code{font:normal 16px/1.4 'Inconsolata',sans-serif}
+.section pre.highlight code{padding:0;background:transparent;color:#fff;word-wrap:break-word;word-break:keep-all;white-space:pre-wrap}
+.section .language-plaintext{padding:2px 5px;background:#dedede;border-radius:2px}
+
+/* html color */
+.language-html .c{color:#999}
+.language-html .nt{color:#79abff}
+.language-html .na{color:#D0B344}
+.language-html .s{color:#9AA83A}
+.language-html .cp{color:#79abff}
+/* javascript color */
+.language-js .c1{color:#999}
+.language-js .k{color:#676867}
+.language-js .kd{color:#9671A0}
+.language-js .nx{color:#6089B4}
+.language-js .nb{color:#d96c6c}
+.language-js .p{color:#d8d8d8}
+.language-js .o{color:#d8d8d8}
+.language-js .s1{color:#ffc600}
+.language-js .s2,
+.language-js .dl{color:#9AA83A}
+.language-js .na{color:#fff}
+.language-js .mi{color:#ffb5ff}
+/* php color */
+.highlight code[data-lang="php"] .cp{color:#d8d8d8}
+.highlight code[data-lang="php"] .nv{color:#d197d9}
+.highlight code[data-lang="php"] .nb{color:#d96c6c}
+.highlight code[data-lang="php"] .s1{color:#ffc600}
+.highlight code[data-lang="php"] .s2{color:#ffc600}
+.highlight code[data-lang="php"] .k{color:#79abff}
+.highlight code[data-lang="php"] .kc{color:#79abff}
+.highlight code[data-lang="php"] .mi{color:#ffb5ff}
 
 .aside{float:right;width:250px;padding:5px 10px;border:1px solid #f1f1f1;border-radius:2px;box-sizing:border-box}
 .aside .row{padding:5px 0}
