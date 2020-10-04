@@ -2,8 +2,8 @@
 layout: default
 title:  "Intro - Dragone Editor Document"
 text:  "Intro"
-lang : "en"
-const : "1.0.1"
+lang: "en"
+const: "1.0.2"
 ---
 
 # [Intro](#intro)
@@ -60,8 +60,8 @@ const editor = new dragonEditor("selector", {
 
 ### [View page](#view-page)
 
-View page is just load css file.<br>
-This css file is useing `editor-item`, `editor-clearfix` class.
+Load viewer css and put in the code to class `editor-dragon-viewer`.<br>
+Also you can check convertor [view-convertor](https://github.com/lovefields/dragonEditor/tree/main/assets/view-convertor) folder.
 
 ```html
 <!-- 
@@ -70,4 +70,6 @@ This css file is useing `editor-item`, `editor-clearfix` class.
 -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
 <link rel="stylesheet" href="[yourdir]/dragonEditorViewer.css">
+
+<div class="editor-dragon-viewer">[code]</div>
 ```

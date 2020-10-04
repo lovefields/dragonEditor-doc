@@ -2,8 +2,8 @@
 layout: default
 title:  "Option - Dragone Editor Document"
 text:  "Option"
-lang : "ko"
-const : "1.0.1"
+lang: "ko"
+const: "1.0.2"
 ---
 
 # [옵션](#옵션)
