@@ -2,8 +2,8 @@
 layout: default
 title:  "Intro - Dragone Editor Document"
 text:  "Intro"
-lang : "ko"
-const : "1.0.1"
+lang: "ko"
+const: "1.0.2"
 ---
 
 # [인트로](#인트로)
@@ -62,8 +62,8 @@ const editor = new dragonEditor("selector", {
 
 ### [뷰 페이지](#뷰-페이지)
 
-뷰어는 css파일만 불러오면 됩니다.<br>
-`editor-item`, `editor-clearfix` 클레스를 사용하니 이점만 유의해 주세요.
+뷰어는 css파일을 불러온 후 `editor-dragon-viewer` 클레스 안에 코드를 삽입하세요.<br>
+josn을 html로 변환 하는 코드는 [view-convertor](https://github.com/lovefields/dragonEditor/tree/main/assets/view-convertor) 를 확인해주세요.
 
 ```html
 <!-- 
@@ -72,4 +72,6 @@ const editor = new dragonEditor("selector", {
 -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
 <link rel="stylesheet" href="[yourdir]/dragonEditorViewer.css">
+
+<div class="editor-dragon-viewer">[code]</div>
 ```

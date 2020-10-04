@@ -3,7 +3,7 @@ layout: default
 title: "Method - Dragone Editor Document"
 text: "Method"
 lang: "en"
-const: "1.0.1"
+const: "1.0.2"
 ---
 
 # [Method](#method)
