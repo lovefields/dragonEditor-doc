@@ -6,7 +6,7 @@ url: ""
 versionList : ["1.0.2"]
 langList : ["ko", "en"]
 lang : "en"
-lastset : "1.0.2"
+lastset : "1.0.3"
 
 # Build settings
 theme: minima
