@@ -2,73 +2,73 @@
 layout: default
 title:  "Option - Dragone Editor Document"
 text:  "Option"
-lang: "en"
-const: "1.0.2"
+lang: "ko"
+const: "1.0.3"
 ---
 
-# [Option](#option)
+# [옵션](#옵션)
 
 ## [articleIdx](#articleIdx)
 
 `default : 0`
 
-Set article index.<br>
-This data is using in media upload.
+게시글의 인덱스를 설정합니다.<br>
+미디어를 업로드할때 정보가 같이 전송됩니다.
 
 ## [articleTempIdx](#articleTempIdx)
 
 `default : 0`
 
-Set temp article index.<br>
-This data is using in media upload.
+임시 게시글의 인덱스를 설정합니다.<br>
+미디어를 업로드할때 정보가 같이 전송됩니다.
 
 ## [multiLang](#multiLang)
 
 `default : true`
 
-Set use multiple languages.
+다국어를 사용할 지 결정합니다.
 
 ## [defaultColor](#defaultColor)
 
 `default : #333`
 
-Set default color.
+기본 색상을 설정합니다.
 
 ## [defaultFontSize](#defaultFontSize)
 
 `default : 16`
 
-Set default font size.
+기본 폰트 사이즈를 설정합니다.
 
 ## [changePoint](#changePoint)
 
 `default : 800`
 
-Set a branch point to Mobile.
+모바일로가는 분기점을 설정합니다.
 
 ## [maxImageWidth](#maxImageWidth)
 
 `default : 700`
 
-Set max in image width.
+이미지의 최대 가로 사이즈를 설정합니다.
 
 ## [maxCodepenHeight](#maxCodepenHeight)
 
 `default : 800`
 
-Set max in codepen iframe height.
+코드펜 프레임의 최대 높이를 설정합니다.
 
 ## [useWebp](#useWebp)
 
 `default : true`
 
-Set using webp format.
+이미지 포멧중 webp 포멧을 사용할지 설정합니다.
 
 ## [codepenTheme](#codepenTheme)
 
 `default : dark`
 
-Set codepen default theme.
+코드팬의 기본 테마를 설정합니다.
 
 ## [blockName](#blockName)
 
@@ -88,7 +88,7 @@ Set codepen default theme.
 }
 ```
 
-Set menu name.
+메뉴의 이름을 지정합니다.
 
 ## [removeMenu](#removeMenu)
 
@@ -96,7 +96,7 @@ Set menu name.
 ["textBlock","imageBlock","ulBlock","olBlock","quotaionBlock","tableBlock","linkboxBlock","emoticonBlock","youtubeBlock","codepenBlock","codeBlock"]
 ```
 
-Remove menu.
+사용하지 않을 메뉴를 삭제합니다.
 
 ## [frontSize](#frontSize)
 
@@ -104,7 +104,7 @@ Remove menu.
 [12, 14, 16, 18, 20, 24, 28, 30, 34, 38] // default
 ```
 
-List of font size in editor.
+에디터에서 사용할 폰트 사이즈 리슽트입니다.
 
 
 ## [codeTheme](#codeTheme)
@@ -113,7 +113,7 @@ List of font size in editor.
 ["default", "vs2015", "androidstudio", "monokai"] // default
 ```
 
-List of theme in codeblock.
+코드블럭에서 사용할 테마 리스트입니다.
 
 ## [codeLang](#codeLang)
 
@@ -121,7 +121,7 @@ List of theme in codeblock.
 ["text", "css", "html", "xml", "json", "java", "javascript", "markdown", "objective-c", "php", "python", "sql", "shell", "kotlin", "swift"] // default
 ```
 
-List of language in codeblock.
+코드블럭에서 사용할 언어 리스트입니다.
 
 ## [colorList](#colorList)
 
@@ -207,7 +207,7 @@ List of language in codeblock.
 ]
 ```
 
-List of color in editor.
+에디터에서 사용하는 컬러 리스트입니다.
 
 ## [addMenu](#addMenu)
 
@@ -221,7 +221,7 @@ addMenu: {
 }
 ```
 
-Add new menu.
+새로운 메뉴를 추가합니다.
 
 ## [addLang](#addLang)
 
@@ -229,34 +229,34 @@ Add new menu.
 ["es"] // ex
 ```
 
-Add language.
+에디터에 사용할 다국어를 추가합니다.
 
 ## [triggerLangChange](#triggerLangChange)
 
 `Function`
 
-Sets the function that runs when the language changes in the editor.<br>
-Returns `lang` as augment value.
+에디터에서 언어가 변경될때 실행되는 함수를 설정합니다.<br>
+인자값으로 `lang`을 반환합니다.
 
 ## [multiUpload](#multiUpload)
 
 `default : false`
 
-Set multi upload.
+다중업로드 지원 유무를 설정합니다.
 
 ## [defaultLinkBoxImage](#defaultLinkBoxImage)
 
 `default : "https://via.placeholder.com/600x300.png"`
 
-Set default image in linkbox.
+링크박스의 기본 이미지를 설정합니다.
 
 ## [linkBoxApi](#linkBoxApi)
 
 `default : "https://api.allorigins.win/get"`
 
-Set link box API.<br>
-This request is using FormData and POST Method. And send URL data.<br>
-Your server should return the following values.
+링크박스 정보를 가져올 url을 설정합니다.<br>
+FormData 형식으로 보내며 Method는 POST로 url 을 전송합니다.<br>
+반환 해야할 데이터는 다음과 같습니다.
 
 ```js
 {
@@ -275,15 +275,14 @@ Your server should return the following values.
 
 `String(URL)`
 
-Set media upload URL.<br>
-This requset is using post, delete, put Method, and send FormData.
+미디어를 업로드 할 URL을 지정합니다.<br>
+method로 post, delete, put 을 사용하며 기본적으로 formData 형식으로 넘어갑니다.
 
-> NOTE : If you didn't this option, Editor has disabled all media buttons.
+> NOTE : 이 속성이 없을 경우 media 항목이 전부 비활성화 됩니다.
 
 ### POST : upload
 
-This method is used to upload media.<br>
-Request data :
+미디어를 업로드 할때 사용하는 메서드 이며 다음과 같은 정보를 전송합니다.
 
 ```js
 {
@@ -294,7 +293,7 @@ Request data :
 }
 ```
 
-Response data :
+서버에서 전송해야할 데이터 :
 
 ```js
 {
@@ -314,7 +313,7 @@ Response data :
 
 ### PUT : edit
 
-Request data :
+업로드된 미디어의 정보를 수정할때 발생합니다.
 
 ```js
 {
@@ -323,7 +322,7 @@ Request data :
 }
 ```
 
-Response data :
+서버에서 전송해야할 데이터 :
 
 ```js
 {
@@ -333,12 +332,13 @@ Response data :
 
 ### DELETE : delete
 
-The URL you set will be followed by "/imageIdx".
+업로드된 미디어를 삭제 할때 발생합니다.
+delete 메서드로 설정한 URL 뒤에 "/imageIdx" 가 붙습니다.
 
 
 ## [lang](#lang)
 
 `String`
 
-Set default langauge.<br>
-If there is no language inside the editor, it will be added and reflected.
+기본 언어를 지정합니다.<br>
+에디터 내부에 해당 언어가 없을 경우 추가해서 반영합니다.

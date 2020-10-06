@@ -3,7 +3,7 @@ layout: default
 title:  "Intro - Dragone Editor Document"
 text:  "Intro"
 lang: "en"
-const: "1.0.2"
+const: "1.0.3"
 ---
 
 # [Intro](#intro)
