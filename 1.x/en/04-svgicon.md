@@ -3,7 +3,7 @@ layout: default
 title:  "Icon - Dragone Editor Document"
 text:  "Icon"
 lang: "en"
-const: "1.0.3"
+const: "1.x"
 ---
 
 # [Icon](#icon)
