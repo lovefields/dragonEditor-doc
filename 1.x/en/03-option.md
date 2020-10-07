@@ -3,7 +3,7 @@ layout: default
 title:  "Option - Dragone Editor Document"
 text:  "Option"
 lang: "en"
-const: "1.0.3"
+const: "1.x"
 ---
 
 # [Option](#option)
