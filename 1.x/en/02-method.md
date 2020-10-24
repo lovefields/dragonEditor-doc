@@ -58,12 +58,12 @@ editor.setMedia([
 ## [getContentData](#getContentData)
 
 Return editor data.<br>
-You can check data structure in [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/work-area/dataSample.json).
+You can check data structure in [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/src/dataSample.json).
 
 ## [setContentData](#setContentData)
 
 Set editor data.<br>
-You can check data structure in [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/work-area/dataSample.json).
+You can check data structure in [dataSample.json](https://github.com/lovefields/dragonEditor/blob/main/src/dataSample.json).
 
 ## [addItem](#addItem)
 

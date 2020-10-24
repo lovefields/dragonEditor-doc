@@ -38,7 +38,11 @@ First, load resource.
         ...
     </defs>
 </svg>
-<div class="editor-dragon"></div>
+<!-- 
+* Default layout is FULL page.
+* If you want using editor some area add data-lyout="container" attribute.
+-->
+<div class="editor-dragon" data-layout=""></div>
 
 <!-- 
 * Load highlight plugin if you using code block.
