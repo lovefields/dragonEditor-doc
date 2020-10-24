@@ -100,8 +100,10 @@ const: "1.x"
 
 ## [frontSize](#frontSize)
 
+`em` 단위를 사용합니다.
+
 ```js
-[12, 14, 16, 18, 20, 24, 28, 30, 34, 38] // default
+[0.75, 0.9, 1, 1.15, 1.25, 1.5, 1.75, 1.9, 2, 2.15, 2.25] // default
 ```
 
 에디터에서 사용할 폰트 사이즈 리슽트입니다.
@@ -268,6 +270,17 @@ FormData 형식으로 보내며 Method는 POST로 url 을 전송합니다.<br>
         description : String
         domain : String
     }
+}
+```
+
+## [csrfData](#csrfData)
+
+업로드 되는 이미지,파일 을 위해 검증된 토큰 정보를 부여합니다.
+
+```js
+{
+    name : "", // key
+    value: "", // value
 }
 ```
 

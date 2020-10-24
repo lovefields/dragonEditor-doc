@@ -39,7 +39,10 @@ dragonEditor는 다음과 같이 사용이 가능합니다.
         ...
     </defs>
 </svg>
-<div class="editor-dragon"></div>
+<!-- 
+* 기본적으로 FULL 페이지를 사용하며 일부 영역에만 에디터를 사용하고 싶을 경우 data-layout에 container 값을 넣으세요
+-->
+<div class="editor-dragon" data-layout=""></div>
 
 <!-- 
 * 코드블럭을 사용한다면 highlight 플러그인을 불러와 주세요.

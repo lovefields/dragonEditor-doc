@@ -100,6 +100,8 @@ Remove menu.
 
 ## [frontSize](#frontSize)
 
+Using `em` unit.
+
 ```js
 [12, 14, 16, 18, 20, 24, 28, 30, 34, 38] // default
 ```
@@ -226,7 +228,7 @@ Add new menu.
 ## [addLang](#addLang)
 
 ```js
-["es"] // ex
+["es"]
 ```
 
 Add language.
@@ -268,6 +270,16 @@ Your server should return the following values.
         description : String
         domain : String
     }
+}
+```
+## [csrfData](#csrfData)
+
+Set csrf token for upload form.
+
+```js
+{
+    name : "", // key
+    value: "", // value
 }
 ```
 
