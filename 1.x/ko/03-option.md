@@ -228,7 +228,7 @@ addMenu: {
 ## [addLang](#addLang)
 
 ```js
-["es"] // ex
+["es"]
 ```
 
 에디터에 사용할 다국어를 추가합니다.
