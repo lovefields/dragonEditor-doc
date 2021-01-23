@@ -56,10 +56,8 @@ dragonEditor는 다음과 같이 사용이 가능합니다.
 이제 스크립트에서 아래와 같이 입력해 주세요.
 
 ```js
-const editor = new dragonEditor();
-// OR
-const editor = new dragonEditor("selector", {
-    key: "value",
+const editor = new dragonEditor({
+    optionKey: "optionValue",
 });
 ```
 

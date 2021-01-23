@@ -55,10 +55,8 @@ First, load resource.
 And next step is using Javascript.
 
 ```js
-const editor = new dragonEditor();
-// OR
-const editor = new dragonEditor("selector", {
-    key: "value",
+const editor = new dragonEditor({
+    optionKey: "optionValue",
 });
 ```
 
