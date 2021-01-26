@@ -310,7 +310,7 @@ Response data :
 
 ```js
 {
-    respon : Boolean,
+    response : Boolean,
     list : [
         {
             hasWebp : Boolean,

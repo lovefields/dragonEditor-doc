@@ -310,7 +310,7 @@ method로 post, delete, put 을 사용하며 기본적으로 formData 형식으�
 
 ```js
 {
-    respon : Boolean,
+    response : Boolean,
     list : [
         {
             hasWebp : Boolean,
