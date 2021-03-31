@@ -21,18 +21,29 @@ Add emoticon in editor.<br>
 By default, you must enter the following information:
 
 ```js
-editor.setEmoticon([
-    {
-        type: "image",
-        value: String(URL),
-        caption: String,
-    },
-    {
-        type: "svg",
-        value: String(HTML),
-        caption: String,
-    },
-]);
+editor.setEmoticon({
+        groupName01: {
+            icon : String<HTML>,
+            list: [
+                {
+                    type: "svg",
+                    code: String<HTML>,
+                }
+            ]
+        },
+        groupName02: {
+            icon: String<HTML>,
+            list: [
+                {
+                    type: "image",
+                    src: String<URL>,
+                    width: Number,
+                    height: Number,
+                    caption: String,
+                }
+            ]
+        }
+});
 ```
 
 ## [setMedia](#setMedia)
@@ -50,7 +61,7 @@ editor.setMedia([
         height: Number,
         defaultFormat: String,
         alt: String,
-        idx: Number,
+        fileIdx: Number,
     },
 ]);
 ```

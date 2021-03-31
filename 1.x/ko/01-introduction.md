@@ -39,14 +39,15 @@ dragonEditor는 다음과 같이 사용이 가능합니다.
         ...
     </defs>
 </svg>
-<!-- 
-* 기본적으로 FULL 페이지를 사용하며 일부 영역에만 에디터를 사용하고 싶을 경우 data-layout에 container 값을 넣으세요
+
+<!--
+* 기본적으로 전체화면 모드입니다.
+* 레이아웃 변경은 옵션을 확인하세요.
 -->
-<div class="editor-dragon" data-layout=""></div>
+<div class="editor-dragon"></div>
 
 <!-- 
 * 코드블럭을 사용한다면 highlight 플러그인을 불러와 주세요.
-* dragonEditor js
 -->
 <script src="[yourdir]/highlight.pack.js"></script>
 <script src="[yourdir]/dragonEditor.js"></script>
@@ -56,9 +57,7 @@ dragonEditor는 다음과 같이 사용이 가능합니다.
 이제 스크립트에서 아래와 같이 입력해 주세요.
 
 ```js
-const editor = new dragonEditor({
-    optionKey: "optionValue",
-});
+const editor = new dragonEditor();
 ```
 
 ### [뷰 페이지](#뷰-페이지)
@@ -70,6 +69,7 @@ josn을 html로 변환 하는 코드는 [view-convertor](https://github.com/love
 <!-- 
 * 코드블럭을 사용한다면 구글 폰트(Inconsolata)를 불러오세요.
 * dragonEditorViewer CSS
+* [code] 는 'view-convertor'를 실행해 얻은 코드입니다.
 -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
 <link rel="stylesheet" href="[yourdir]/dragonEditorViewer.css">

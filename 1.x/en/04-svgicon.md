@@ -18,9 +18,10 @@ In the editor, call up the svg icon as follows:
 </svg>
 ```
 
-## [edit](#edit)
+## [edit/add](#edit/add)
 
 If you want edit icon, you can edit `[code]` area.
+`id` is icon name.
 ```html
 <svg class="icon-pack">
     <defs>

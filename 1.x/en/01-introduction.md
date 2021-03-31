@@ -40,9 +40,9 @@ First, load resource.
 </svg>
 <!-- 
 * Default layout is FULL page.
-* If you want using editor some area add data-lyout="container" attribute.
+* If you change to eidtor layout? Check to option value.
 -->
-<div class="editor-dragon" data-layout=""></div>
+<div class="editor-dragon"></div>
 
 <!-- 
 * Load highlight plugin if you using code block.
@@ -55,9 +55,7 @@ First, load resource.
 And next step is using Javascript.
 
 ```js
-const editor = new dragonEditor({
-    optionKey: "optionValue",
-});
+const editor = new dragonEditor();
 ```
 
 ### [View page](#view-page)
@@ -69,6 +67,7 @@ Also you can check convertor [view-convertor](https://github.com/lovefields/drag
 <!-- 
 * Load Google font(Inconsolata) if you using code block.
 * Load DragonEditorViewer CSS
+* [code] is result of using 'view-convertor' file.
 -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;display=swap">
 <link rel="stylesheet" href="[yourdir]/dragonEditorViewer.css">
