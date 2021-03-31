@@ -36,7 +36,7 @@ Set default color.
 
 ## [defaultFontSize](#defaultFontSize)
 
-`default : 16`
+`default : 14`
 
 Set default font size.
 
@@ -283,7 +283,7 @@ Set csrf token for upload form.
 }
 ```
 
-## [uploadURL](#uploadURL)
+## [mediaURL](#mediaURL)
 
 `String(URL)`
 
@@ -313,6 +313,7 @@ Response data :
     response : Boolean,
     list : [
         {
+            fileIdx: Number,
             hasWebp : Boolean,
             src : String(URL),
             defaultFormat : String,
@@ -331,7 +332,7 @@ Request data :
 ```js
 {
     imageName : String
-    imageIdx : Number
+    fileIdx : Number
 }
 ```
 
@@ -345,7 +346,7 @@ Response data :
 
 ### DELETE : delete
 
-The URL you set will be followed by "/imageIdx".
+The URL you set will be followed by "/fileIdx".
 
 
 ## [lang](#lang)

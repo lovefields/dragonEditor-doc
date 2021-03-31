@@ -19,7 +19,7 @@ const: "1.x"
 
 `default : 0`
 
-임시 게시글의 인덱스를 설정합니다.<br>
+게시글의 임시 인덱스를 설정합니다.<br>
 미디어를 업로드할때 정보가 같이 전송됩니다.
 
 ## [multiLang](#multiLang)
@@ -36,7 +36,7 @@ const: "1.x"
 
 ## [defaultFontSize](#defaultFontSize)
 
-`default : 16`
+`default : 14`
 
 기본 폰트 사이즈를 설정합니다.
 
@@ -106,7 +106,7 @@ const: "1.x"
 [0.75, 0.9, 1, 1.15, 1.25, 1.5, 1.75, 1.9, 2, 2.15, 2.25] // default
 ```
 
-에디터에서 사용할 폰트 사이즈 리슽트입니다.
+에디터에서 사용할 폰트 사이즈 리스트입니다.
 
 
 ## [codeTheme](#codeTheme)
@@ -284,7 +284,7 @@ FormData 형식으로 보내며 Method는 POST로 url 을 전송합니다.<br>
 }
 ```
 
-## [uploadURL](#uploadURL)
+## [mediaURL](#mediaURL)
 
 `String(URL)`
 
@@ -296,6 +296,8 @@ method로 post, delete, put 을 사용하며 기본적으로 formData 형식으�
 ### POST : upload
 
 미디어를 업로드 할때 사용하는 메서드 이며 다음과 같은 정보를 전송합니다.
+
+서버에 요청하는 데이터 :
 
 ```js
 {
@@ -313,6 +315,7 @@ method로 post, delete, put 을 사용하며 기본적으로 formData 형식으�
     response : Boolean,
     list : [
         {
+            fileIdx: Number,
             hasWebp : Boolean,
             src : String(URL),
             defaultFormat : String,
@@ -331,7 +334,7 @@ method로 post, delete, put 을 사용하며 기본적으로 formData 형식으�
 ```js
 {
     imageName : String
-    imageIdx : Number
+    fileIdx : Number
 }
 ```
 
@@ -346,7 +349,7 @@ method로 post, delete, put 을 사용하며 기본적으로 formData 형식으�
 ### DELETE : delete
 
 업로드된 미디어를 삭제 할때 발생합니다.
-delete 메서드로 설정한 URL 뒤에 "/imageIdx" 가 붙습니다.
+delete 메서드로 설정한 URL 뒤에 "/fileIdx" 가 붙습니다.
 
 
 ## [lang](#lang)

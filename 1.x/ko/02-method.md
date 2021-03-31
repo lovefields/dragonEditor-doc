@@ -18,21 +18,32 @@ const editor = new dragonEditor();
 ## [setEmoticon](#setEmoticon)
 
 에디터에서 사용할 이모티콘을 삽입합니다.<br>
-배열을 기본으로 다음과 같이 정보를 입력해야 합니다.
+먼저 `useEmoticon`이 `true` 여야합니다.
 
 ```js
-editor.setEmoticon([
-    {
-        type: "image",
-        value: String(URL),
-        caption: String,
-    },
-    {
-        type: "svg",
-        value: String(HTML),
-        caption: String,
-    },
-]);
+editor.setEmoticon({
+        groupName01: {
+            icon : String<HTML>,
+            list: [
+                {
+                    type: "svg",
+                    code: String<HTML>,
+                }
+            ]
+        },
+        groupName02: {
+            icon: String<HTML>,
+            list: [
+                {
+                    type: "image",
+                    src: String<URL>,
+                    width: Number,
+                    height: Number,
+                    caption: String,
+                }
+            ]
+        }
+});
 ```
 
 ## [setMedia](#setMedia)
@@ -50,7 +61,7 @@ editor.setMedia([
         height: Number,
         defaultFormat: String,
         alt: String,
-        idx: Number,
+        fileIdx: Number,
     },
 ]);
 ```

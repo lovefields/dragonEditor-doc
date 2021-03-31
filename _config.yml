@@ -5,7 +5,7 @@ baseurl: "/dragonEditor-doc"
 url: ""
 versionList : ["1.x"]
 langList : ["ko", "en"]
-lang : "en"
+lang : "ko"
 lastset : "1.x"
 
 # Build settings
