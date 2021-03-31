@@ -8,6 +8,12 @@ const: "1.x"
 
 # [Option](#option)
 
+## [layout](#layout)
+
+`default : full`
+
+Set editor layout. Default is `full` and if you want using some area. Set `container` value.
+
 ## [articleIdx](#articleIdx)
 
 `default : 0`
