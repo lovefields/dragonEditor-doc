@@ -8,6 +8,12 @@ const: "1.x"
 
 # [옵션](#옵션)
 
+## [layout](#layout)
+
+`default : full`
+
+에디터의 레이아웃을 지정합니다. 기본은 `full`이며 `container` 를 지정해 원하는 영역에서만 사용 할 수도 있습니다.
+
 ## [articleIdx](#articleIdx)
 
 `default : 0`
