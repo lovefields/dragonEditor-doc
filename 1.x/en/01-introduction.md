@@ -55,7 +55,7 @@ First, load resource.
 And next step is using Javascript.
 
 ```js
-const editor = new dragonEditor();
+const editor = new DragonEditor();
 ```
 
 ### [View page](#view-page)

@@ -12,7 +12,7 @@ dragonEditor에서 제공하는 메서드입니다.<br>
 기본적으로 다음과 같은 선언이 되어있음을 가정합니다.
 
 ```js
-const editor = new dragonEditor();
+const editor = new DragonEditor();
 ```
 
 ## [setEmoticon](#setEmoticon)

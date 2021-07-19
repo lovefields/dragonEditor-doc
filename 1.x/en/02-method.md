@@ -12,7 +12,7 @@ This method is provided by dragonEditor.<br>
 By default, assume the following declaration:
 
 ```js
-const editor = new dragonEditor();
+const editor = new DragonEditor();
 ```
 
 ## [setEmoticon](#setEmoticon)
