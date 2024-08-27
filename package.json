@@ -1,0 +1,20 @@
+{
+  "name": "dragon-editor-document",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
