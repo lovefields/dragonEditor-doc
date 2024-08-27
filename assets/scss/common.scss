@@ -1,0 +1,29 @@
+@import "reset";
+
+#de {
+    min-width: 860px;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 41px);
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        flex: 1;
+        padding: 40px;
+    }
+
+    .page-title {
+        color: var(--color-text-default);
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 14px;
+        color: var(--color-text-default);
+    }
+}

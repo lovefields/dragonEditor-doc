@@ -3,7 +3,7 @@ export default defineNuxtConfig({
 
     devtools: { enabled: false },
 
-    compatibilityDate: "2024-04-03",
+    compatibilityDate: "2024-08-27",
 
     app: {
         head: {
@@ -19,4 +19,14 @@ export default defineNuxtConfig({
     },
 
     css: ["@/assets/scss/common.scss"],
+
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: `@import "@/assets/scss/variables";`,
+                },
+            },
+        },
+    },
 });
