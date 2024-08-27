@@ -9,7 +9,7 @@ bun install --frozen-lockfile
 ### Dev
 
 ```
-bun run dev
+bun run preview
 ```
 
 ### build
