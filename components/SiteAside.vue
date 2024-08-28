@@ -1,7 +1,8 @@
 <template>
     <aside class="aside">
         <NuxtLink class="link" to="/">Intro</NuxtLink>
-        <NuxtLink class="link">Method</NuxtLink>
+        <NuxtLink class="link" to="/method">Method</NuxtLink>
+        <NuxtLink class="link" to="/option">Option</NuxtLink>
     </aside>
 </template>
 

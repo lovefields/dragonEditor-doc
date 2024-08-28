@@ -7,6 +7,11 @@
 .container {
     display: flex;
     min-height: calc(100vh - 41px);
+    color: var(--color-text-default);
+
+    a {
+        color: #0000ff;
+    }
 
     .section {
         display: flex;
@@ -16,14 +21,100 @@
         padding: 40px;
     }
 
-    .page-title {
-        color: var(--color-text-default);
-        font-size: 22px;
+    h1 {
+        font-size: 26px;
         font-weight: bold;
     }
 
-    .text {
-        font-size: 14px;
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 16px;
+
+        code {
+            padding: 2px 4px;
+            background: #f1f1f1;
+            color: #be1b1b;
+        }
+    }
+
+    .list {
+        padding-left: 30px;
         color: var(--color-text-default);
+        font-size: 16px;
+    }
+
+    ul {
+        list-style: disc;
+
+        li {
+            list-style: inherit;
+        }
+    }
+
+    .--red {
+        color: var(--color-text-worrying);
+    }
+
+    pre {
+        padding: 20px;
+        color: #adbac7;
+        background: #22272e;
+
+        .title,
+        .title.--class,
+        .title.--class.--inherited,
+        .title.--function {
+            color: #dcbdfb;
+        }
+
+        .attr,
+        .attribute,
+        .literal,
+        .meta,
+        .number,
+        .operator,
+        .selector-attr,
+        .selector-class,
+        .selector-id,
+        .variable {
+            color: #6cb6ff;
+        }
+
+        .meta .string,
+        .regexp,
+        .string {
+            color: #96d0ff;
+        }
+
+        .name,
+        .quote,
+        .selector-pseudo,
+        .selector-tag {
+            color: #8ddb8c;
+        }
+
+        .built-in,
+        .symbol {
+            color: #f69d50;
+        }
+
+        .doctag,
+        .keyword,
+        .meta .keyword,
+        .template-tag,
+        .template-variable,
+        .type,
+        .variable.--language {
+            color: #f47067;
+        }
     }
 }
