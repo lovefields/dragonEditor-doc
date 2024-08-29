@@ -3,6 +3,7 @@
         <NuxtLink class="link" to="/">Intro</NuxtLink>
         <NuxtLink class="link" to="/method">Method</NuxtLink>
         <NuxtLink class="link" to="/option">Option</NuxtLink>
+        <NuxtLink class="link" to="/demo">Demo</NuxtLink>
     </aside>
 </template>
 

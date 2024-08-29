@@ -19,30 +19,92 @@
         row-gap: 20px;
         flex: 1;
         padding: 40px;
-    }
 
-    h1 {
-        font-size: 26px;
-        font-weight: bold;
-    }
+        & > h1 {
+            font-size: 26px;
+            font-weight: bold;
+        }
 
-    h2 {
-        font-size: 20px;
-        font-weight: 500;
-    }
+        & > h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
 
-    h3 {
-        font-size: 16px;
-        font-weight: 500;
-    }
+        & > h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
 
-    p {
-        font-size: 16px;
+        & > p {
+            font-size: 16px;
 
-        code {
-            padding: 2px 4px;
-            background: #f1f1f1;
-            color: #be1b1b;
+            code {
+                padding: 2px 4px;
+                background: #f1f1f1;
+                color: #be1b1b;
+            }
+        }
+
+        & > ul {
+            list-style: disc;
+
+            li {
+                list-style: inherit;
+            }
+        }
+
+        & > pre {
+            padding: 20px;
+            color: #adbac7;
+            background: #22272e;
+
+            .title,
+            .title.--class,
+            .title.--class.--inherited,
+            .title.--function {
+                color: #dcbdfb;
+            }
+
+            .attr,
+            .attribute,
+            .literal,
+            .meta,
+            .number,
+            .operator,
+            .selector-attr,
+            .selector-class,
+            .selector-id,
+            .variable {
+                color: #6cb6ff;
+            }
+
+            .meta .string,
+            .regexp,
+            .string {
+                color: #96d0ff;
+            }
+
+            .name,
+            .quote,
+            .selector-pseudo,
+            .selector-tag {
+                color: #8ddb8c;
+            }
+
+            .built-in,
+            .symbol {
+                color: #f69d50;
+            }
+
+            .doctag,
+            .keyword,
+            .meta .keyword,
+            .template-tag,
+            .template-variable,
+            .type,
+            .variable.--language {
+                color: #f47067;
+            }
         }
     }
 
@@ -52,69 +114,7 @@
         font-size: 16px;
     }
 
-    ul {
-        list-style: disc;
-
-        li {
-            list-style: inherit;
-        }
-    }
-
     .--red {
         color: var(--color-text-worrying);
-    }
-
-    pre {
-        padding: 20px;
-        color: #adbac7;
-        background: #22272e;
-
-        .title,
-        .title.--class,
-        .title.--class.--inherited,
-        .title.--function {
-            color: #dcbdfb;
-        }
-
-        .attr,
-        .attribute,
-        .literal,
-        .meta,
-        .number,
-        .operator,
-        .selector-attr,
-        .selector-class,
-        .selector-id,
-        .variable {
-            color: #6cb6ff;
-        }
-
-        .meta .string,
-        .regexp,
-        .string {
-            color: #96d0ff;
-        }
-
-        .name,
-        .quote,
-        .selector-pseudo,
-        .selector-tag {
-            color: #8ddb8c;
-        }
-
-        .built-in,
-        .symbol {
-            color: #f69d50;
-        }
-
-        .doctag,
-        .keyword,
-        .meta .keyword,
-        .template-tag,
-        .template-variable,
-        .type,
-        .variable.--language {
-            color: #f47067;
-        }
     }
 }

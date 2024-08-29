@@ -20,6 +20,8 @@ export default defineNuxtConfig({
 
     css: ["@/assets/scss/common.scss"],
 
+    modules: ["dragon-editor"],
+
     vite: {
         css: {
             preprocessorOptions: {
