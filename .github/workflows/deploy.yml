@@ -11,12 +11,13 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - run: corepack enable
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: "20"
-            # Pick your own package manager and build script
-            - run: npm install
-            - run: NUXT_APP_BASE_URL=/dragonEditor-doc/ npx nuxt build --preset github_pages
+            - uses: oven-sh/setup-bun@v2
+            # - uses: actions/setup-node@v3
+            #   with:
+            #       node-version: "20"
+            # # Pick your own package manager and build script
+            - run: bun install --frozen-lockfile
+            - run: NUXT_APP_BASE_URL=/dragonEditor-doc/ bun run build --preset github_pages
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
