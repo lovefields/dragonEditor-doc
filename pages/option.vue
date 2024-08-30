@@ -31,7 +31,7 @@
         <pre><code><span class="tag">&lt;<span class="name">template</span>&gt;</span>
     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"editor-area"</span>&gt;</span>
         <span class="tag">&lt;<span class="keyword">ClientOnly</span>&gt;</span>
-            <span class="tag">&lt;<span class="keyword">DragonEditor</span> <span class="attr">:useMenuBar</span>="<span class="string">false</span>" <span class="attr">@addPasteImage</span>="<span class="string">addPasteImage</span>" <span class="attr">ref</span>=<span class="string">"$editor"</span> &#47;&gt;</span>
+            <span class="tag">&lt;<span class="keyword">DragonEditor</span> <span class="attr">@addPasteImage</span>="<span class="string">addPasteImage</span>" <span class="attr">ref</span>=<span class="string">"$editor"</span> &#47;&gt;</span>
         <span class="tag">&lt;&#47;<span class="keyword">ClientOnly</span>&gt;</span>
     <span class="tag">&lt;&#47;<span class="name">div</span>&gt;</span>
 <span class="tag">&lt;&#47;<span class="name">template</span>&gt;</span>
