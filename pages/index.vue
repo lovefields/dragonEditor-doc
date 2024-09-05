@@ -11,6 +11,7 @@
 
         <ul class="list">
             <li><NuxtLink to="https://nuxt.com/modules/pinia" target="_blank">@pinia&#47;nuxt</NuxtLink></li>
+            <li><NuxtLink to="https://highlightjs.org/" target="_blank">highlight.js</NuxtLink></li>
         </ul>
 
         <h2>Installation</h2>
