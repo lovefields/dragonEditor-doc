@@ -14,6 +14,10 @@
             <li><NuxtLink to="https://highlightjs.org/" target="_blank">highlight.js</NuxtLink></li>
         </ul>
 
+        <h2>Font</h2>
+
+        <p>If you use Codeblock. I recommented use `Inconsolata` font. (<NuxtLink to="https://fonts.google.com/specimen/Inconsolata?query=Inconsolata" target="_blank">link</NuxtLink>)</p>
+
         <h2>Installation</h2>
 
         <p>Install using the package manager you use.</p>
