@@ -11,7 +11,7 @@
             </div>
 
             <ClientOnly>
-                <DragonEditor ref="$editor" />
+                <DragonEditor @uploadImageEvent="pasteImageProcess" ref="$editor" />
             </ClientOnly>
         </div>
 
@@ -85,6 +85,20 @@ function addImage() {
     const idx = Math.floor(Math.random() * 10);
 
     $editor.value?.addImageBlock(list[idx]);
+}
+
+function pasteImageProcess(file: File) {
+    const url = URL.createObjectURL(file);
+    const $img = document.createElement("img");
+
+    $img.src = url;
+    $img.onload = () => {
+        $editor.value?.addImageBlock({
+            src: url,
+            width: $img.width,
+            height: $img.height,
+        });
+    };
 }
 
 function sendView() {
