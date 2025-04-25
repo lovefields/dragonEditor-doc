@@ -180,10 +180,6 @@ function pasteImageProcess(file: File) {
                     color: #333;
                 }
             }
-
-            .de-menu-wrap {
-                overflow-x: auto;
-            }
         }
     }
 }
