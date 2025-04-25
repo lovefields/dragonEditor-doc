@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     compatibilityDate: "2024-08-27",
 
     app: {
+        baseURL: "/dragonEditor-doc/",
         head: {
             charset: "utf-8",
             viewport: "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5",
