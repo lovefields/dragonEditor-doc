@@ -3,7 +3,7 @@
         <h1>Method</h1>
 
         <h2>
-            addBlock <code>Function(value: <a href="/type#DEBlockData">DEBlockData</a>)</code>
+            addBlock <code>Function(value: <NuxtLink to="/type#DEBlockData">DEBlockData</NuxtLink>)</code>
         </h2>
 
         <p>This method adds blocks supported by the editor to the editor.</p>
@@ -29,7 +29,7 @@
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 
         <h2>
-            setDecoration <code>Function(value: <a href="/type#DEDecoration">DEDecoration</a>)</code>
+            setDecoration <code>Function(value: <NuxtLink to="/type#DEDecoration">DEDecoration</NuxtLink>)</code>
         </h2>
 
         <p>This method set text node style.</p>
@@ -51,7 +51,7 @@
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 
         <h2>
-            setTextAlign <code>Function(value: <a href="/type#DETextalign">DETextalign</a>)</code>
+            setTextAlign <code>Function(value: <NuxtLink to="/type#DETextalign">DETextalign</NuxtLink>)</code>
         </h2>
 
         <p>This method set align style in editable element.</p>

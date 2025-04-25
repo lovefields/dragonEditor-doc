@@ -2,7 +2,7 @@
     <div class="section type-page">
         <h1>Type</h1>
 
-        <h2 id="DragonEditor"><a href="#DragonEditor">DragonEditor</a></h2>
+        <h2 id="DragonEditor"><NuxtLink to="#DragonEditor">DragonEditor</NuxtLink></h2>
 
         <pre><code><span class="keyword">interface</span> <span class="title class_">DragonEditor</span> {
     <span class="attr">addBlock</span>: <span class="function">(<span class="params"><span class="attr">type</span>: <span class="title class_">DEBlockData</span></span>) =&gt;</span> <span class="built_in">void</span>;
@@ -10,11 +10,11 @@
     <span class="attr">setTextAlign</span>: <span class="function">(<span class="params"><span class="attr">type</span>: <span class="title class_">DETextalign</span></span>) =&gt;</span> <span class="built_in">void</span>;
 }</code></pre>
 
-        <h2 id="DEContentData"><a href="#DEContentData">DEContentData</a></h2>
+        <h2 id="DEContentData"><NuxtLink to="#DEContentData">DEContentData</NuxtLink></h2>
 
         <pre><code><span class="keyword">type</span> <span class="title class_">DEContentData</span> = <span class="title class_">DEBlockData</span>[];</code></pre>
 
-        <h2 id="DEBlockData"><a href="#DEBlockData">DEBlockData</a></h2>
+        <h2 id="DEBlockData"><NuxtLink to="#DEBlockData">DEBlockData</NuxtLink></h2>
 
         <pre><code><span class="keyword">type</span> <span class="title class_">DEBlockData</span> = <span class="title class_">DETextBlock</span> | <span class="title class_">DEHeadingBlock</span> | <span class="title class_">DEListBlock</span> | <span class="title class_">DEImageBlock</span> | <span class="title class_">DECodeBlock</span> | <span class="title class_">DECustomBlock</span>;
 
@@ -71,11 +71,11 @@
     <span class="attr">textContent</span>: <span class="built_in">string</span>;
 }</code></pre>
 
-        <h2 id="DEDecoration"><a href="#DEDecoration">DEDecoration</a></h2>
+        <h2 id="DEDecoration"><NuxtLink to="#DEDecoration">DEDecoration</NuxtLink></h2>
 
         <pre><code><span class="keyword">type</span> <span class="title class_">DEDecoration</span> = <span class="string">"bold"</span> | <span class="string">"italic"</span> | <span class="string">"underline"</span> | <span class="string">"strikethrough"</span> | <span class="string">"code"</span>;</code></pre>
 
-        <h2 id="DETextalign"><a href="#DETextalign">DETextalign</a></h2>
+        <h2 id="DETextalign"><NuxtLink to="#DETextalign">DETextalign</NuxtLink></h2>
 
         <pre><code><span class="keyword">type</span> <span class="title class_">DETextalign</span> = <span class="string">"left"</span> | <span class="string">"right"</span> | <span class="string">"center"</span> | <span class="string">"justify"</span>;</code></pre>
     </div>
