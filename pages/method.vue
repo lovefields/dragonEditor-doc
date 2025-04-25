@@ -74,16 +74,3 @@
     </div>
 </template>
 
-<script setup lang="ts">
-const route = useRoute();
-
-onMounted(() => {
-    if (route.hash !== undefined) {
-        const el = document.querySelector(route.hash);
-
-        if (el !== null) {
-            el.scrollIntoView({ behavior: "smooth" });
-        }
-    }
-});
-</script>

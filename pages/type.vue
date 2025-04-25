@@ -80,3 +80,17 @@
         <pre><code><span class="keyword">type</span> <span class="title class_">DETextalign</span> = <span class="string">"left"</span> | <span class="string">"right"</span> | <span class="string">"center"</span> | <span class="string">"justify"</span>;</code></pre>
     </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute();
+
+onMounted(() => {
+    if (route.hash) {
+        const el = document.querySelector(route.hash);
+
+        if (el !== null) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+});
+</script>
