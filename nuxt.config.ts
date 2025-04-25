@@ -31,8 +31,5 @@ export default defineNuxtConfig({
                 },
             },
         },
-        optimizeDeps: {
-            include: ["highlight.js/lib/core"],
-        },
     },
 });

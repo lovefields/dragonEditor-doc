@@ -85,12 +85,16 @@
 const route = useRoute();
 
 onMounted(() => {
-    if (route.hash) {
-        const el = document.querySelector(route.hash);
+    setTimeout(() => {
+        if (route.hash !== "") {
+            const $target = document.querySelector(route.hash);
 
-        if (el !== null) {
-            el.scrollIntoView({ behavior: "smooth" });
+            if ($target !== null) {
+                const rect = $target.getBoundingClientRect();
+
+                window.scrollTo(0, rect.top);
+            }
         }
-    }
+    }, 500);
 });
 </script>
