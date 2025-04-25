@@ -20,15 +20,18 @@ export default defineNuxtConfig({
 
     css: ["@/assets/scss/common.scss"],
 
-    modules: ["@pinia/nuxt", "dragon-editor"],
+    modules: ["dragon-editor"],
 
     vite: {
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: `@import "@/assets/scss/variables";`,
+                    additionalData: `@use "@/assets/scss/variables" as *;`,
                 },
             },
+        },
+        optimizeDeps: {
+            include: ["highlight.js/lib/core"],
         },
     },
 });

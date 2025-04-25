@@ -1,4 +1,4 @@
-@import "reset";
+@use "reset";
 
 #de {
     min-width: 860px;
@@ -33,6 +33,20 @@
         & > h3 {
             font-size: 16px;
             font-weight: 500;
+        }
+
+        & > h1,
+        & > h2,
+        & > h3 {
+            code {
+                padding: 2px 4px;
+                background: #f1f1f1;
+                color: #be1b1b;
+            }
+
+            a {
+                color: inherit;
+            }
         }
 
         & > p {
