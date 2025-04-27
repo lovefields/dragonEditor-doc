@@ -28,11 +28,6 @@ bun add dragon-editor</code></pre>
 
         <pre><code><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">defineNuxtConfig</span>({
     <span class="attr">modules</span>: [<span class="string">"dragon-editor"</span>],
-    <span class="attr">vite</span>:{
-        <span class="attr">optimizeDeps</span>: {
-            <span class="attr">include</span>: [<span class="string">"highlight.js/lib/core"</span>],
-        },
-    }
 });</code></pre>
 
         <h2>How to use?</h2>
