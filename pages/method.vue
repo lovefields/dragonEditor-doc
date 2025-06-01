@@ -3,6 +3,26 @@
         <h1>Method</h1>
 
         <h2>
+            changeEditorData <code>Function(value: <NuxtLink to="/type#DEContentData" :use-hash="true">DEContentData</NuxtLink>)</code>
+        </h2>
+
+        <pre><code><span class="tag">&lt;<span class="name">template</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"editor-area"</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">DragonEditor</span> <span class="attr">v-model</span>=<span class="string">"contentData"</span> <span class="attr">ref</span>=<span class="string">"$editor"</span>/&gt;</span>
+        <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"setData"</span>&gt;</span>set Data<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">template</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">"ts"</span>&gt;</span><span class="language-javascript">
+    <span class="keyword">const</span> contentData = ref&lt;<span class="title class_">DEContentData</span>&gt;([]);
+    <span class="keyword">const</span> $editor = ref&lt;<span class="title class_">DragonEditor</span>&gt;();
+
+    <span class="keyword">function</span> <span class="title function_">setData</span>(<span class="params"></span>){
+        $editor.<span class="property">value</span>.<span class="title function_">changeEditorData</span>([]); <span class="comment">// use DEContentData</span>
+    }
+</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
+
+        <h2>
             addBlock <code>Function(value: <NuxtLink to="/type#DEBlockData" :use-hash="true">DEBlockData</NuxtLink>)</code>
         </h2>
 
@@ -73,4 +93,3 @@
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
     </div>
 </template>
-

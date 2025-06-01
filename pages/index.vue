@@ -41,7 +41,7 @@ bun add dragon-editor</code></pre>
 <span class="tag">&lt;/<span class="name">template</span>&gt;</span>
 
 <span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">"ts"</span>&gt;</span><span class="language-javascript">
-    <span class="keyword">const</span> contentData = <span class="symbol">ref</span>&lt;<span class="keyword">DEContentData</span>&gt;([]);
+    <span class="keyword">const</span> contentData = <span class="symbol">ref</span>&lt;<span class="keyword">DEContentData</span>&gt;([]); <span class="comment">// Do not modify the value after binding under any circumstances.</span>
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 
         <h3>View Page</h3>
