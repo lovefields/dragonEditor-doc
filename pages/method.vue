@@ -91,5 +91,24 @@
         $editor.<span class="property">value</span>.<span class="title function_">setTextAlign</span>(<span class="string">"right"</span>);
     }
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
+
+        <h2>updateLayout <code>Function</code></h2>
+
+        <p>This method update layout information. If you change page layout, use this method.</p>
+
+        <pre><code><span class="tag">&lt;<span class="name">template</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"editor-area"</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">DragonEditor</span> <span class="attr">v-model</span>=<span class="string">"contentData"</span> <span class="attr">ref</span>=<span class="string">"$editor"</span>/&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">template</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">"ts"</span>&gt;</span><span class="language-javascript">
+    <span class="keyword">const</span> contentData = ref&lt;<span class="title class_">DEContentData</span>&gt;([]);
+    <span class="keyword">const</span> $editor = ref&lt;<span class="title class_">DragonEditor</span>&gt;();
+
+    <span class="keyword">onMounted</span>(()=>{
+        $editor.<span class="property">value</span>.<span class="title function_">updateLayout</span>();
+    })
+</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
     </div>
 </template>
