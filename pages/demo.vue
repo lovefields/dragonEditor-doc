@@ -127,7 +127,9 @@ function addImage() {
     ];
     const idx = Math.floor(Math.random() * 10);
 
-    $editor.value?.addBlock(list[idx]);
+    if (list[idx] !== undefined) {
+        $editor.value?.addBlock(list[idx]);
+    }
 }
 
 function pasteImageProcess(file: File) {
