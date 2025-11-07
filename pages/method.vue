@@ -115,9 +115,13 @@
     })
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 
-        <h2>checkDataEmpty <code>Function:boolean</code></h2>
+        <h2>
+            checkDataEmpty <code>Function(data: <NuxtLink to="/type#DEContentData" :use-hash="true">DEContentData</NuxtLink>):boolean</code>
+        </h2>
 
-        <p>This method is check to Editor data is empty.</p>
+        <p>This method work to check Editor data is empty.</p>
+
+        <p>If You set data arguments, This method check about data arguments.</p>
 
         <pre>
             <code><span class="tag">&lt;<span class="name">template</span>&gt;</span>
