@@ -116,7 +116,7 @@
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
 
         <h2>
-            checkDataEmpty <code>Function(data: <NuxtLink to="/type#DEContentData" :use-hash="true">DEContentData</NuxtLink>):boolean</code>
+            checkDataEmpty <code>Function(data?: <NuxtLink to="/type#DEContentData" :use-hash="true">DEContentData</NuxtLink>):boolean</code>
         </h2>
 
         <p>This method work to check Editor data is empty.</p>
@@ -134,8 +134,14 @@
     <span class="keyword">const</span> contentData = ref&lt;<span class="title class_">DEContentData</span>&gt;([]);
     <span class="keyword">const</span> $editor = ref&lt;<span class="title class_">DragonEditor</span>&gt;();
 
-    <span class="keyword">function</span> <span class="title function_">submit</span>(<span class="params"></span>):<span class="keyword">void</span>{
+    <span class="keyword">function</span> <span class="title function_">submit01</span>(<span class="params"></span>):<span class="keyword">void</span>{
         <span class="keyword">if</span>($editor.<span class="property">value</span>.<span class="title function_">checkDataEmpty</span>() === <span class="literal">false</span>){
+            <span class="comment">// ...</span>
+        }
+    }
+
+    <span class="keyword">function</span> <span class="title function_">submit02</span>(<span class="params"></span>):<span class="keyword">void</span>{
+        <span class="keyword">if</span>($editor.<span class="property">value</span>.<span class="title function_">checkDataEmpty</span>([] <span class="comment">/* DEContentData */</span>) === <span class="literal">false</span>){
             <span class="comment">// ...</span>
         }
     }
