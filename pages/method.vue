@@ -6,6 +6,10 @@
             changeEditorData <code>Function(value: <NuxtLink to="/type#DEContentData" :use-hash="true">DEContentData</NuxtLink>)</code>
         </h2>
 
+        <p>This method work change Editor Data and also v-model data.</p>
+
+        <p>ps) This method need 250ms when change v-model data.</p>
+
         <pre><code><span class="tag">&lt;<span class="name">template</span>&gt;</span>
     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"editor-area"</span>&gt;</span>
         <span class="tag">&lt;<span class="name">DragonEditor</span> <span class="attr">v-model</span>=<span class="string">"contentData"</span> <span class="attr">ref</span>=<span class="string">"$editor"</span>/&gt;</span>
