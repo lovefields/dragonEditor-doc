@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
     css: ["@/assets/scss/common.scss"],
 
-    modules: ["dragon-editor"],
+    modules: ["@pinia/nuxt","@vueuse/nuxt","dragon-editor"],
 
     vite: {
         css: {

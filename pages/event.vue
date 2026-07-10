@@ -2,7 +2,7 @@
     <div class="section bind-page">
         <h1>Event</h1>
 
-        <h2>uploadImageEvent <code>Function(data:File)</code></h2>
+        <h2>uploadImageEvent <code>Function(files:File[])</code></h2>
 
         <p>
             If you want add image to Editor. (Menu & Method & Paste)<br />
@@ -20,18 +20,10 @@
 <span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">"ts"</span>&gt;</span><span class="language-javascript">
     <span class="keyword">const</span> $editor = ref&lt;<span class="title class_">DragonEditor</span>&gt;();
 
-    <span class="keyword">function</span> <span class="title function_">uploadImageEvent</span>(<span class="params">file:File</span>) {
+    <span class="keyword">function</span> <span class="title function_">uploadImageEvent</span>(<span class="params">files:File[]</span>) {
         <span class="comment">// Do upload Image</span>
         <span class="comment">// Then add Image</span>
-        $editor.<span class="property">value</span>.<span class="title function_">addBlock</span>({
-            <span class="attr">type</span>: <span class="string">"image"</span>;
-            <span class="attr">maxWidth</span>: number;
-            <span class="attr">src</span>: string;
-            <span class="attr">width</span>: number;
-            <span class="attr">height</span>: number;
-            <span class="attr">caption</span>: string;
-            <span class="attr">classList</span>: string[];
-        });
+        $editor.<span class="property">value</span>.<span class="title function_">addImageBlock</span>(<span class="string">"URL"</span>);
     }
 </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
     </div>
