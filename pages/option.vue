@@ -13,7 +13,7 @@
 
         <h2>mediaHostURL <code>String</code></h2>
 
-        <p>If you want set Image Host Server URL. Use this option.</p>
+        <p>If you want set Image And File Host Server URL. Use this option.</p>
 
         <pre><code><span class="tag">&lt;<span class="keyword">DragonEditor</span> <span class="attr">:mediaHostURL</span>="<span class="string">your media url</span>" &#47;&gt;</span></code></pre>
 
