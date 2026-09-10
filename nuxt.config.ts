@@ -21,9 +21,21 @@ export default defineNuxtConfig({
 
     css: ["@/assets/scss/common.scss"],
 
-    modules: ["@pinia/nuxt","@vueuse/nuxt","dragon-editor"],
+    modules: [
+        "@pinia/nuxt",
+        "@vueuse/nuxt",
+        [
+            "dragon-editor",
+            {
+                componentNameList: ["BlockMultiplication", "BlockPlus"],
+            },
+        ],
+    ],
 
     vite: {
+        optimizeDeps: {
+            include: ["highlight.js/lib/*"],
+        },
         css: {
             preprocessorOptions: {
                 scss: {

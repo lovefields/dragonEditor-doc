@@ -53,6 +53,15 @@
 
         <pre><code><span class="tag">&lt;<span class="keyword">DragonEditor</span> <span class="attr">:acceptImageFormat</span>="<span class="string">.jpg,.jpeg,.png,.webp,.gif</span>" &#47;&gt;</span></code></pre>
 
+        <h2>acceptFileFormat <code>String</code></h2>
+
+        <p>
+            This value determines File Format when user Upload File.<br />
+            Default : <code>"*"</code>
+        </p>
+
+        <pre><code><span class="tag">&lt;<span class="keyword">DragonEditor</span> <span class="attr">:acceptFileFormat</span>="<span class="string">*</span>" &#47;&gt;</span></code></pre>
+
         <h2>anchorTagTarget <code>String</code></h2>
 
         <p>

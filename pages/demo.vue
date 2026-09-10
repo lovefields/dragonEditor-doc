@@ -9,9 +9,16 @@
                 <div class="edit-mode">
                     <div class="btn-area">
                         <p><button class="btn" @click="addImage">Add Image</button> : This button add image to Editor.</p>
+                        <p>-- Add Component Block --</p>
+                        <p>Value A : <input type="number" v-model="a" /></p>
+                        <p>Value B : <input type="number" v-model="b" /></p>
+                        <p>
+                            <button class="btn" @click="addPlusComponent">Add Plus Component</button>&nbsp;
+                            <button class="btn" @click="addMuliplicationComponent">Add Multiplication Component</button>
+                        </p>
                     </div>
 
-                    <DragonEditor v-model="data" @uploadImageEvent="pasteImageProcess" ref="$editor" />
+                    <DragonEditor v-model="data" @uploadImageEvent="pasteImageProcess" @uploadFileEvent="uploadFileEvent" ref="$editor" />
                 </div>
             </div>
 
@@ -27,8 +34,10 @@
 </template>
 
 <script setup lang="ts">
-const $editor = ref<DragonEditor>();
 const data = ref<DEContentData>([]);
+const a = ref<number>(0);
+const b = ref<number>(0);
+const $editor = ref<DragonEditor>();
 
 function addImage() {
     const list: string[] = [
@@ -56,6 +65,22 @@ function pasteImageProcess(files: File[]) {
 
         $editor.value?.addImageBlock(url);
     });
+}
+
+async function uploadFileEvent(files: File[]) {
+    for (let file of files) {
+        const url = URL.createObjectURL(file);
+
+        await $editor.value?.addFileBlock(url, file.name, file.size);
+    }
+}
+
+function addPlusComponent(): void {
+    $editor.value?.addComponentBlock("BlockPlus", { a: a.value, b: b.value });
+}
+
+function addMuliplicationComponent(): void {
+    $editor.value?.addComponentBlock("BlockMultiplication", { a: a.value, b: b.value });
 }
 </script>
 
