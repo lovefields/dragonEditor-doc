@@ -95,6 +95,7 @@ function addMuliplicationComponent(): void {
         .right {
             flex: 1;
             font-size: 16px;
+            max-width: calc(50% - 10px);
 
             h2 {
                 font-size: 20px;

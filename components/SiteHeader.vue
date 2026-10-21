@@ -20,7 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: var(--size-asdie);
+        width: var(--size-aside);
         height: 40px;
         color: #5451ac;
         border-right: 1px solid var(--color-border);

@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    width: var(--size-asdie);
+    width: var(--size-aside);
     padding: 20px;
     background: var(--color-bg);
     border-right: 1px solid var(--color-border);
